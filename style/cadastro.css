@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #453c5c 16.62%, #2e0d23 85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+  }
+  
+  .cabecalho-imagem {
+    height: 110px;
+    cursor: pointer;
+  }
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+    
+    
+    
+}
+  
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+    
+}
+a:hover{
+    color: #522543;
+    transition: 0.3s all;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.main-register{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(68.15deg, #453c5c 16.62%, #2e0d23 85.61%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.4px solid #f8efbd;
+}
+
+.left-register{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-register > h1 {
+    color: white;
+    font-size: 25px;
+}
+.imagem{
+    width: 50vh;
+}
+
+.right-register{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-register{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-register > h1 {
+    color: #f8efbd;
+    font-weight: 800;
+    margin: 0;
+}
+.gender-group{
+    display: flex;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #39314d;
+    color: #f8efbd;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.textfield > label{
+    color: #f8efbd;
+    margin-bottom: 10px;
+}
+
+.genero > label{
+    color: #f8efbd;
+    margin-bottom: 10px;
+}
+.textfield > input ::placeholder{
+    color: #2f2841;
+}
+
+.btn-register{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2f2841;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #f8efbd;
+    background: #f8efbd;
+}
+
+@media only screen and (max-width:  950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:  950px){
+    .main-register{
+        flex-direction: column;
+    }
+    .left-register > h1{
+        display: none;
+    }
+    .left-register{
+        width: 100%;
+        height: auto;
+    }
+    .right-register{
+        width: 100%;
+        height: auto;
+    }
+    .card-register{
+        width: 90%;
+    }
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+
+}
+
+.rodape-imagem {
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+  
+  #msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }

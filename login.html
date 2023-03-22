@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>WebMed | Login</title>
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="./style/login.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="./img/Logo sem nome.png" alt="Logo da comunidade Ballerini">
+        <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-item" href="/home.html">Inicio</a>
+          <a class="cabecalho-menu-item" href="/cadastro.html">Cadastrar</a>
+    
+        </nav>
+      </header>
+	  <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>E encontre um de nossos profissionais</h1>
+            <img class="imagem" src="/img/medicine-animate.svg" alt="">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+
+                <div id='msgError'></div>
+                
+                <div class="textfield">
+                    <label id="userLabel" for="usuario">Usuario</label>
+                    <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                </div>
+                <div class="textfield">
+                    <label id="senhaLabel" for="senha">Senha</label>
+                    <input id="senha" type="password" name="senha" placeholder="Senha" required>
+                </div>
+                <button onclick="entrar()" class="btn-login">Login</button>
+            </div>
+        </div>
+    </div>
+<footer class="rodape"><img class="rodape-imagem" src="./img/Logo sem nome.png "></footer>
+  
+<script src="/js/login.js"></script>
+</body>
+</html>
