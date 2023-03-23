@@ -90,7 +90,7 @@ function cadastrar(){
     localStorage.setItem('listaUser', JSON.stringify(listaUser))
     
     setTimeout(()=>{
-    window.location.href = 'http://127.0.0.1:5501/login.html'
+    window.location.href = 'login.html'
     }, 2000)
   }
   
